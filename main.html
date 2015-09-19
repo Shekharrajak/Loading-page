@@ -53,6 +53,50 @@
             <div class="hight"><i></i></div>
         </div>
         <br>
+
+         <h3><strong>The Start of Coding Period!</strong></h3>
+
+<p>The Community bonding Period is close to end now &amp; my Exams as well. Tomorrow starts the Coding Period &amp; I have been waiting for it for some time now. </p>
+
+<p>Recently I gave a quick look to my Proposed Timeline in my <a href="https://github.com/sympy/sympy/wiki/GSoC-2015-Application-AMiT-Kumar--Solvers-:-Extending-Solveset#timeline">Proposal</a>, &amp;  decided to swap the 2nd Week&#39;s work with Ist, this will help me securing few credits in my College&#39;s Minor Project Submission (Which has the deadline of 30th May).</p>
+
+<h3><strong>Plan for Week 1</strong></h3>
+
+<p>This week, I am planning to work on Solving Linear systems in <code>solveset</code>. (Currently solveset support univariate solvers only).</p>
+
+<p>The main functions, I would be implementing are:</p>
+
+<ul>
+<li><p><code>eq_to_matrix</code> :
+<em>method to convert system of Equations to Matrix Form.</em></p></li>
+<li><p><code>linsolve</code>: <em>It&#39;s the General Linear System solver.</em></p></li>
+</ul>
+
+<p>As mentioned in the proposal, Solving system of linear equations is an important feature of solvers in a CAS. Most of the CAS have a convenient single function to solve linear systems, for example <code>LinearSolve</code> in Mathematica.</p>
+
+<p>The <strong><code>linsolve</code></strong> which I would be implementing is inspired from Matlab &amp; Maxima.</p>
+
+<h5><strong>Features Overview</strong></h5>
+
+<p>We have a lot of reusable code in <code>sympy.matrices</code>  &amp; <code>sympy.solvers.solvers</code>, which would be quite useful.
+One of the most important thing I would like to have in <code>linsolve</code> is supporting a lot of input formats.
+Though, most of the CAS suport only one input format. This feature would be quite useful for sympy&#39;s <code>linsolve</code>.</p>
+
+<h6>The three most common input formats, I can recall as of now are:</h6>
+
+<ul>
+<li>Augmented Matrix Form</li>
+<li>List Of Equations Form</li>
+<li>Input A &amp; b Matrix Form (from <code>Ax = b</code>)</li>
+</ul>
+
+<p>It would be great to have all three input formats supported in the Public API <code>linsolve</code> Method.</p>
+
+<p>Looking forward for Coding Period, that&#39;s all for now.</p>
+
+</div>
+
+
         <div class="row">
           
             <div id="disqus_thread">
